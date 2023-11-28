@@ -31,6 +31,11 @@ export class FeadbackForm extends Component {
     }));
   };
 
+  resetStatistics = () => {
+    console.log('Click on Reset');
+    this.setState({ good: 0, neutral: 0, bad: 0 });
+  };
+
   render() {
     return (
       <>
@@ -52,6 +57,7 @@ export class FeadbackForm extends Component {
               bad={this.state.bad}
               total={this.countTotalFeedback()}
               positivePercentage={this.countPositiveFeedbackPercentage()}
+              reset={this.resetStatistics}
             />
           </Section>
         )}

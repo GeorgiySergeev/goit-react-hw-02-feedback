@@ -30,6 +30,17 @@ export const Button = styled.button`
           background-color: red;
           color: white;
         `;
+      case 'reset':
+        return `
+          background-color: orange;
+          color: red;
+          margin-left: 20px;
+          width: 56px;
+          font-size: 8px;
+          height:16px;
+          
+          
+          `;
       default:
         return `background-color: grey;`;
     }

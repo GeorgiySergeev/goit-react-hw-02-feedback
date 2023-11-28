@@ -1,5 +1,7 @@
 // import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
+// import { Center } from '@chakra-ui/react';
 import { Table } from './Statistics.styled';
+import { Button } from 'components/FeedbackOptions/FeedbackOptions.styled';
 
 export const Statistics = ({
   good,
@@ -7,9 +9,14 @@ export const Statistics = ({
   bad,
   total,
   positivePercentage,
+  reset,
 }) => {
   return (
-    <>
+    <div
+      style={{
+        alignItems: 'center',
+      }}
+    >
       <Table>
         <thead>
           <tr>
@@ -40,6 +47,9 @@ export const Statistics = ({
           </tr>
         </tbody>
       </Table>
-    </>
+      <Button onClick={reset} buttonStyle="reset">
+        Reset
+      </Button>
+    </div>
   );
 };

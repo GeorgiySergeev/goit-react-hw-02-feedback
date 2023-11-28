@@ -1,5 +1,3 @@
-// import { CircularProgress, CircularProgressLabel } from '@chakra-ui/react';
-// import { Center } from '@chakra-ui/react';
 import { Table } from './Statistics.styled';
 import { Button } from 'components/FeedbackOptions/FeedbackOptions.styled';
 

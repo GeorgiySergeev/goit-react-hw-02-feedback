@@ -12,16 +12,9 @@ export const App = () => {
         fontSize: 40,
         color: '#010101',
         padding: 50,
-        // background: 'gray',
       }}
     >
-      <FeadbackForm
-        name={{
-          btn1: 'Good',
-          btn2: 'Neutral',
-          btn3: 'Bad',
-        }}
-      />
+      <FeadbackForm />
     </div>
   );
 };

@@ -1,10 +1,12 @@
 import React from 'react';
+
 import { Component } from 'react';
 import { Statistics } from 'components/Statistics/Statistics';
 import { Section } from 'components/Section/Section';
 import { Notification } from 'components/Notification/Notification';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Logo } from 'components/Logo/Logo';
+
 export class FeadbackForm extends Component {
   state = {
     good: 0,

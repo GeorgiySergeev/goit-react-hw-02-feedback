@@ -1,16 +1,27 @@
+import { FeadbackForm } from './FeadbackForm/FeadbackForm';
+
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: '100%',
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
+        justifyContent: 'start',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
+        padding: 50,
+        // background: 'gray',
       }}
     >
-      React homework template
+      <FeadbackForm
+        name={{
+          btn1: 'Good',
+          btn2: 'Neutral',
+          btn3: 'Bad',
+        }}
+      />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Button, ButtonList } from './FeedbackOptions.styled';
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <ButtonList>
-      {Object.keys(options).map((key, i) => {
+      {options.map((key, i) => {
         return (
           <Button
             onClick={() => onLeaveFeedback(key)}

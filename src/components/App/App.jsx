@@ -6,8 +6,9 @@ import { Section } from 'components/Section/Section';
 import { Notification } from 'components/Notification/Notification';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Logo } from 'components/Logo/Logo';
+import { Container } from './App.styled';
 
-export class FeadbackForm extends Component {
+export class App extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -34,17 +35,16 @@ export class FeadbackForm extends Component {
   };
 
   resetStatistics = () => {
-    console.log('Click on Reset');
     this.setState({ good: 0, neutral: 0, bad: 0 });
   };
 
   render() {
     return (
-      <>
+      <Container>
         <Section title="Please leave feedback">
           <Logo text="Cafe Expresso" />
           <FeedbackOptions
-            options={this.state}
+            options={Object.keys(this.state)}
             onLeaveFeedback={this.onClickHendler}
           ></FeedbackOptions>
         </Section>
@@ -63,7 +63,7 @@ export class FeadbackForm extends Component {
             />
           </Section>
         )}
-      </>
+      </Container>
     );
   }
 }
